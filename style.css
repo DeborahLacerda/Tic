@@ -1,0 +1,292 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  text-align: center;
+  background-color: var(--main-background-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 95%;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  color: var(--title-color);
+  margin-bottom: 1.5rem;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cell {
+  background-color: var(--cell-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: calc(2vw);
+  font-weight: bold;
+  height: 50px;
+  max-width: 200px;
+  height: 50px;
+  color: var(--text-color);
+  border-radius: 0.5rem;
+  position: relative;
+  padding-top: 100%;
+  background: linear-gradient(
+    45deg,
+    #ff8c00,
+    #ff0080,
+    #00ffff,
+    #00ff00,
+    #ffff00,
+    #ff8c00
+  );
+  background-size: 600% 600%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.game-status {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.game-restart {
+  background-color: var(--button-background);
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  font-size: calc(2vw);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+  background: linear-gradient(
+    45deg,
+    #ff8c00,
+    #ff0080,
+    #00ffff,
+    #00ff00,
+    #ffff00,
+    #ff8c00
+  );
+  background-size: 600% 600%;
+  animation: gradient 10s ease infinite;
+}
+
+/* light */
+:root [data-theme="light"] {
+  --background-color: #f4f4f4;
+  --main-background-color: #ffffff;
+  --title-color: #ff0000;
+  --text-color: #333333;
+  --cell-background: #e0e0e0;
+  --button-background: #333333;
+  transition: background-color 0.3s;
+}
+/* dark */
+:root [data-theme="dark"] {
+  --background-color: #222222;
+  --main-background-color: #2e2e2e;
+  --title-color: #ff0000;
+  --text-color: #ffffff;
+  --cell-background: #3d3d3d;
+  --button-background: #ffffff;
+  transition: background-color 0.3s;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+main {
+  text-align: center;
+  background-color: var(--main-background-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 95%;
+}
+
+.game-title {
+  font-size: 2.5rem;
+  color: var(--title-color);
+  margin-bottom: 1.5rem;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cell {
+  background-color: var(--cell-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: calc(2vw);
+  font-weight: bold;
+  height: 50px;
+  max-width: 200px;
+  height: 50px;
+  color: var(--text-color);
+  border-radius: 0.5rem;
+  position: relative;
+  padding-top: 100%;
+  background: linear-gradient(
+    45deg,
+    #ff8c00,
+    #ff0080,
+    #00ffff,
+    #00ff00,
+    #ffff00,
+    #ff8c00
+  );
+  background-size: 600% 600%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.game-status {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.game-restart {
+  background-color: var(--button-background);
+  width: 100%;
+  max-width: 200px;
+  height: 50px;
+  font-size: calc(2vw);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s;
+  background: linear-gradient(
+    45deg,
+    #ff8c00,
+    #ff0080,
+    #00ffff,
+    #00ff00,
+    #ffff00,
+    #ff8c00
+  );
+  background-size: 600% 600%;
+  animation: gradient 10s ease infinite;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  border-radius: 34px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.slider:before {
+  content: "";
+  background-color: #ffffff;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: transform 0.3s;
+}
+
+input[type="checkbox"]:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input[type="checkbox"]:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* light */
+:root [data-theme="light"] {
+  --background-color: #f4f4f4;
+  --main-background-color: #ffffff;
+  --title-color: #ff0000;
+  --text-color: #333333;
+  --cell-background: #e0e0e0;
+  --button-background: #333333;
+  transition: background-color 0.3s;
+}
+/* dark */
+:root [data-theme="dark"] {
+  --background-color: #222222;
+  --main-background-color: #2e2e2e;
+  --title-color: #ff0000;
+  --text-color: #ffffff;
+  --cell-background: #3d3d3d;
+  --button-background: #ffffff;
+  transition: background-color 0.3s;
+}
